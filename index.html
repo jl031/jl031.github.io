@@ -3,9 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hola Mundo!</title>
 </head>
 <body>
     Hola Mundo!
+    <input type="checkbox"  id="boton"  onchange="cambiar()">
+    <script>
+        var intervalo
+        function epilepsia(){
+            document.body.style.backgroundColor = (`rgb(${Math.random()*256}, ${Math.random()*256}, ${Math.random()*256})`)
+            document.body.style.color = (`rgb(${Math.random()*256}, ${Math.random()*256}, ${Math.random()*256})`)
+        }
+
+        function cambiar()
+        {
+
+            if (boton.checked)
+            {
+                intervalo = setInterval(epilepsia, 1)
+            }
+            else 
+            {
+                clearInterval(intervalo)
+            }
+        }
+    </script>
 </body>
 </html>
