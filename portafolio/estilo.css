@@ -80,7 +80,7 @@ li {
 fieldset {
     text-align: left;
     margin: 0px 20%;
-    padding: 0px 10px;
+    padding: 15px 30px;
 }
 
 #social-networks a {
@@ -117,8 +117,13 @@ fieldset > input {
     height: 3em;
 }
 
-fieldset > textarea{
-    width: 90%;    
+fieldset > textarea, fieldset > input[type="text"]{
+    width: 100%;    
+}
+
+fieldset > textarea {
+    height: 15rem;
+    resize: vertical;
 }
 
 footer{
