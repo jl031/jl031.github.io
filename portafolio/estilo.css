@@ -1,0 +1,157 @@
+* {
+    margin: 0;
+    min-width: 0;
+}
+
+body {
+    background-color: #294F6D;
+    color: #BABEC1;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+}
+
+h1, h2 {
+    color: #607F8F;
+}
+
+nav {
+    margin-bottom: 5px;
+    background-color: #062C49;
+    padding: 10px;
+    position: sticky;
+    top: 0;
+}
+
+nav > a {
+    text-decoration: none;
+    color: #627D91;
+    font-size: 1.25em;
+    margin-right: 1.5em;
+    margin-left: .25em;
+    font-weight: bold;
+}
+
+section{
+    text-align: center;
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+}
+
+#contacto {
+    display: block;
+}
+
+#contacto > article {
+    margin: 1rem 0;
+}
+
+section > article {
+    flex-basis: 400px;
+    flex-grow: 1;
+    margin: 1rem 5rem;
+}
+
+header > h1 {
+    text-align: center;
+}
+
+article {
+    margin-bottom: 35px;
+}
+
+#social-networks > ul, #formacion > ul, #hard-skills > ul, #hard-skills > ul > ul, #soft-skills > ul {
+    list-style-type: none;
+    padding-left: 0 ;
+}
+#hard-skills > ul > li {
+    font-weight: bold;
+    color: #001526;
+    font-size: 1.25em;
+}
+
+li {
+    width: 40%;
+    display: inline-block;
+    margin: 5px 5px;
+    padding: 0;
+}
+
+fieldset {
+    text-align: left;
+    margin: 0px 20%;
+    padding: 0px 10px;
+}
+
+#social-networks a {
+    color: #627D91;
+    text-decoration: none;
+}
+
+#social-networks a:hover{
+    text-decoration: underline;
+}
+
+#social-networks > ul {
+    text-align: center;
+}
+
+#social-networks > ul > li {
+    width: 25%;
+    padding: 7px;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+fieldset > input:not([type="button"]), fieldset > textarea {
+    background-color: #062C49;
+    color:#BABEC1;
+    margin: 10px 0;
+    text-align: justify;
+    border: 4px solid #001526;
+    border-radius: 5px;
+}
+
+fieldset > input {
+    width: 45%;
+    height: 3em;
+}
+
+fieldset > textarea{
+    width: 90%;    
+}
+
+footer{
+    background-color: #062C49;
+    text-align: center;
+}
+
+footer::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer > section {
+    margin: 0;
+    padding: 5px 0px;
+    display: inline-block;
+    box-sizing: border-box;
+    width: 33%;
+}
+
+footer p {
+    display: inline;
+}
+
+#footer-izq {
+    text-align: left;
+}
+
+#footer-centro {
+    text-align: center;
+}
+
+#footer-dcha {
+    text-align: right;
+}
